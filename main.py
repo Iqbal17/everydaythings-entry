@@ -87,16 +87,68 @@ out on purpose."
 
 Hand count, two ways. Line 1: 101 non-space characters + 22 spaces = 123.
 Line 2: 129 non-space characters + 30 spaces = 159. Total: 123 + 1 + 159 = 283.
+
+DECISION RECORD — REVISION PASS (three alternatives weighed against the brief):
+
+R1. Tighten line 1 only, keep line 2 (276 chars total):
+   L1: "Rain is the sky wringing out a giant sponge, squeezing drops onto the
+   ground until there is nothing left to squeeze." (116)
+   L2: unchanged (159).
+   - For: fixes the two real flaws in line 1 — "until the sponge is light
+     enough to float away" adds a second, confusing mechanism (does the sponge
+     float away? why?), and "over the roofs" is arbitrary when rain falls on
+     everything; "onto the ground until there is nothing left to squeeze" is
+     cleaner and more universal for a 10-year-old.
+   - Against: line 2 is left untouched, and its scale limit ("a real sponge
+     fits in your hand") is the weaker of its two limits — a 10-year-old
+     already knows a cloud is bigger than a sponge, so it states the obvious
+     instead of teaching anything new. Half a revision.
+
+R2. Switch the everyday thing (toaster / queue / traffic jam, ~260 chars):
+   - For: a fresh subject could surprise more than familiar rain.
+   - Against: Pass 1 already weighed those subjects and the rain/sponge
+     analogy won on every criterion; switching subjects throws away the
+     strongest picture to restart the contest. A revision pass should improve
+     the winner, not re-litigate the choice. Rejected.
+
+R3. Tighten line 1 AND rewrite line 2 around the real mechanism (CHOSEN, 303):
+   L1: "Rain is the sky wringing out a giant sponge, squeezing drops onto the
+   ground until there is nothing left to squeeze." (116)
+   L2: "The sponge part works because clouds really do hold water and let it
+   go, but a cloud is not one solid thing you can squeeze: it is a crowd of
+   tiny drops that just get too heavy and fall." (186)
+   - For: line 2 now names the most honest limit of all — a cloud is not a
+     solid thing anyone squeezes; it is a crowd of tiny drops that get too
+     heavy and fall on their own. That is specific, it teaches the actual
+     science, and it makes the two lines work as a pair: line 1 gives the
+     picture, line 2 gives the real mechanism behind it. It replaces two
+     weaker limits (scale, which states the obvious, and intention, which a
+     10-year-old would already guess) with one limit that does real
+     explanatory work, which is exactly what criterion 4 rewards.
+   - Against: line 2 is longer (186 vs 159) and "a crowd of tiny drops" asks
+     the reader to picture something invisible; the total is longer too —
+     but 303 is still well inside the 400 gate, and the extra words earn
+     their place by explaining rather than decorating.
+
+REVISED FINAL ENTRY (303 characters total: 116 + 1 newline + 186):
+Line 1: "Rain is the sky wringing out a giant sponge, squeezing drops onto the
+ground until there is nothing left to squeeze."
+Line 2: "The sponge part works because clouds really do hold water and let it
+go, but a cloud is not one solid thing you can squeeze: it is a crowd of
+tiny drops that just get too heavy and fall."
+
+Hand count, two ways. Line 1: 96 non-space characters + 20 spaces = 116.
+Line 2: 148 non-space characters + 38 spaces = 186. Total: 116 + 1 + 186 = 303.
 """
 
 import os
 
 ENTRY = (
-    "Rain is the sky wringing out a giant sponge, squeezing drops over the "
-    "roofs until the sponge is light enough to float away.\n"
+    "Rain is the sky wringing out a giant sponge, squeezing drops onto the "
+    "ground until there is nothing left to squeeze.\n"
     "The sponge part works because clouds really do hold water and let it go, "
-    "but a real sponge fits in your hand, and the sky never wrings anything "
-    "out on purpose."
+    "but a cloud is not one solid thing you can squeeze: it is a crowd of "
+    "tiny drops that just get too heavy and fall."
 )
 
 
